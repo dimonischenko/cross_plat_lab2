@@ -1,4 +1,3 @@
-// Дані про планети 
 const planets = [
   {
     id: 'mercury',

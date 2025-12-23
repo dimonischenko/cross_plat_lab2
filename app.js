@@ -1,6 +1,3 @@
-/*
- * Компонент головної сторінки (Список планет)
- */
 class HomePage extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
@@ -35,9 +32,6 @@ class HomePage extends HTMLElement {
   }
 }
 
-/*
- * Компонент сторінки детальної інформації (Виправлення 8: Заміна ion-img на <img>)
- */
 class PlanetDetailPage extends HTMLElement {
   connectedCallback() {
     const planetId = window.location.pathname.split('/').pop();
@@ -131,6 +125,5 @@ class PlanetDetailPage extends HTMLElement {
   }
 }
 
-// Реєструємо наші кастомні елементи
 customElements.define('page-home', HomePage);
 customElements.define('page-planet-detail', PlanetDetailPage);
